@@ -1,14 +1,14 @@
 <?php
 
 is_file("./includes/config.inc.php")
-    or die("Você precisa configurar o arquivo config.inc.php em Invetech Fuabc/INCLUDES/para iniciar o uso do Invetech Fuabc<br>Leia o arquivo <a href='LEIAME.md'>LEIAME.md</a> para obter as principais informações sobre a instalação do Invetech Fuabc" .
-        "<br><br>You have to configure the config.inc.php file in Invetech Fuabc/INCLUDES/ to start using Invetech Fuabc<br>Read the file <a href='LEIAME.md'>LEIAME.md</a> to get the main informations about the Invetech Fuabc Installation!");
+    or die("Você precisa configurar o arquivo config.inc.php em OCOMON/INCLUDES/para iniciar o uso do OCOMON!<br>Leia o arquivo <a href='LEIAME.md'>LEIAME.md</a> para obter as principais informações sobre a instalação do OCOMON!" .
+        "<br><br>You have to configure the config.inc.php file in OCOMON/INCLUDES/ to start using Ocomon!<br>Read the file <a href='LEIAME.md'>LEIAME.md</a> to get the main informations about the Ocomon Installation!");
 
 if (version_compare(phpversion(), '7.0', '<')) {
     session_start();
     session_destroy();
-    echo "A versão mínima do PHP deve ser a 7.x. Será necessário atualizar o PHP para poder utilizar o Invetech Fuabc.<hr>";
-    echo "Invetech Fuabc needs at least PHP 7.x to run properly.";
+    echo "A versão mínima do PHP deve ser a 7.x. Será necessário atualizar o PHP para poder utilizar o OcoMon.<hr>";
+    echo "OcoMon needs at least PHP 7.x to run properly.";
     return;
 }
 
@@ -16,8 +16,8 @@ if (!function_exists('mb_internal_encoding')) {
     /* Não possui o módulo mbstring */
     session_start();
     session_destroy();
-    echo "É necessário instalar o módulo mbstring no seu PHP para que o Invetech Fuabc funcione adequadamente.<hr>";
-    echo "You need to install mbstring PHP module in order to Invetech Fuabc runs properly.";
+    echo "É necessário instalar o módulo mbstring no seu PHP para que o OcoMon funcione adequadamente.<hr>";
+    echo "You need to install mbstring PHP module in order to OcoMon runs properly.";
     return;
 }
 
@@ -94,7 +94,7 @@ $admAreaHome = $adminPath . "users.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?= TRANS('TTL_OCOMON'); ?>">
-    <title>FUABC BETA 1 &nbsp;</title>
+    <title>FUABC ALPHA 0.4 &nbsp;</title>
 
     <!-- using local links -->
     <link rel="stylesheet" href="./includes/components/bootstrap/custom.css">

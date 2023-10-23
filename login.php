@@ -2,13 +2,13 @@
 
 
 is_file("./includes/config.inc.php")
-	or die("Você precisa configurar o arquivo config.inc.php em Invetech Fuabc/INCLUDES/para iniciar o uso do Invetech Fuabc!<br>Leia o arquivo <a href='LEIAME.md'>LEIAME.md</a> para obter as principais informações sobre a instalação do Invetech Fuabc!" .
-		"<br><br>You have to configure the config.inc.php file in Invetech Fuabc/INCLUDES/ to start using Invetech Fuabc!<br>Read the file <a href='LEIAME.md'>LEIAME.md</a> to get the main informations about the Invetech Fuabc Installation!");
+	or die("Você precisa configurar o arquivo config.inc.php em OCOMON/INCLUDES/para iniciar o uso do OCOMON!<br>Leia o arquivo <a href='LEIAME.md'>LEIAME.md</a> para obter as principais informações sobre a instalação do OCOMON!" .
+		"<br><br>You have to configure the config.inc.php file in OCOMON/INCLUDES/ to start using Ocomon!<br>Read the file <a href='LEIAME.md'>LEIAME.md</a> to get the main informations about the Ocomon Installation!");
 
 if (version_compare(phpversion(), '7.4', '<')) {
 	session_start();
 	session_destroy();
-	echo "A versão mínima do PHP deve ser a 7.4. Será necessário atualizar o PHP para poder utilizar o Invetech Fuabc.<hr>";
+	echo "A versão mínima do PHP deve ser a 7.4. Será necessário atualizar o PHP para poder utilizar o OcoMon.<hr>";
 	echo "OcoMon needs at least PHP 7.4 to run properly.";
 	return;
 }
@@ -87,7 +87,7 @@ $login_cookie = filter_input(INPUT_COOKIE, "oc_login");
 <html lang="pt-BR">
 
 <head>
-	<title>Fundação do ABC BETA 1</title>
+	<title>Fundação do ABC Alpha 0.3</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="<?= TRANS('TTL_OCOMON'); ?>">
