@@ -1,0 +1,12 @@
+{
+    "OcomonApi": {
+        "limit": 60,
+        "requests": 5,
+        "time": 1691699047
+    },
+    "OcomonApiAuth": {
+        "limit": 60,
+        "requests": 1,
+        "time": 1689291565
+    }
+}
