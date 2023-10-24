@@ -15,5 +15,31 @@ A plataforma de inventário de ativos do parque tecnológico proporcionará dive
 8.	Melhoria na segurança de dados e conformidade de licenciamento. 
 9.	Facilitação da tomada de decisões informadas com base em dados precisos. 
 
+Instalação 
+
+## REQUIREMENTS:
+
+
++ Web-server with Apache (***not tested in others servers***) + PHP + MySQL (or MariaDB):
+    
+    - PHP at least from version **7.4** with:
+        - PDO
+        - pdo_mysql
+        - mbstring
+        - openssl
+        - imap
+        - curl
+        - iconv
+        - gd
+        - ldap
+    
+    - MySQL at least version 5.6 or MariaDB(at least version 10.2):
+
+    - For integration (through API) or to enable the opening of tickets by email:
+         - Apache must allow URL rewriting (to direct API routes via htaccess);
+         - The "mod_rewrite" module must be enabled in Apache;
+
 
 Ederson Alves da Silva
+
+
